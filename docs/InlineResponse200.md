@@ -1,8 +1,8 @@
-# openapi.model.InlineResponse200
+# gitserver-client.model.InlineResponse200
 
 ## Load the model package
 ```dart
-import 'package:openapi/api.dart';
+import 'package:gitserver-client/api.dart';
 ```
 
 ## Properties

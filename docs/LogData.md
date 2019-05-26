@@ -1,8 +1,8 @@
-# openapi.model.LogData
+# gitserver-client.model.LogData
 
 ## Load the model package
 ```dart
-import 'package:openapi/api.dart';
+import 'package:gitserver-client/api.dart';
 ```
 
 ## Properties

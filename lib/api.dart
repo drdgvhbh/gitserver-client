@@ -1,4 +1,4 @@
-library openapi.api;
+library gitserver-client.api;
 
 import 'dart:async';
 import 'dart:convert';

@@ -1,8 +1,8 @@
-# openapi.api.DefaultApi
+# gitserver-client.api.DefaultApi
 
 ## Load the API package
 ```dart
-import 'package:openapi/api.dart';
+import 'package:gitserver-client/api.dart';
 ```
 
 All URIs are relative to *http://localhost/v1*
@@ -21,7 +21,7 @@ This will list the commit in the specified repository.
 
 ### Example 
 ```dart
-import 'package:openapi/api.dart';
+import 'package:gitserver-client/api.dart';
 // TODO Configure API key authorization: api_key
 //defaultApiClient.getAuthentication<ApiKeyAuth>('api_key').apiKey = 'YOUR_API_KEY';
 // uncomment below to setup prefix (e.g. Bearer) for API key, if needed

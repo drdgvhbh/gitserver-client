@@ -1,8 +1,8 @@
-# openapi.model.Contributor
+# gitserver-client.model.Contributor
 
 ## Load the model package
 ```dart
-import 'package:openapi/api.dart';
+import 'package:gitserver-client/api.dart';
 ```
 
 ## Properties
