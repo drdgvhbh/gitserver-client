@@ -1,4 +1,4 @@
-part of gitserver-client.api;
+part of gitserver.api;
 
 class InlineResponse200 {
   /* The API version */
@@ -21,7 +21,7 @@ class InlineResponse200 {
     if (json['apiVersion'] == null) {
       apiVersion = null;
     } else {
-          apiVersion = json['apiVersion'];
+      apiVersion = json['apiVersion'];
     }
     if (json['data'] == null) {
       data = null;
@@ -31,38 +31,36 @@ class InlineResponse200 {
     if (json['method'] == null) {
       method = null;
     } else {
-          method = json['method'];
+      method = json['method'];
     }
     if (json['id'] == null) {
       id = null;
     } else {
-          id = json['id'];
+      id = json['id'];
     }
   }
 
   Map<String, dynamic> toJson() {
-    Map <String, dynamic> json = {};
-    if (apiVersion != null)
-      json['apiVersion'] = apiVersion;
-    if (data != null)
-      json['data'] = data;
-    if (method != null)
-      json['method'] = method;
-    if (id != null)
-      json['id'] = id;
+    Map<String, dynamic> json = {};
+    if (apiVersion != null) json['apiVersion'] = apiVersion;
+    if (data != null) json['data'] = data;
+    if (method != null) json['method'] = method;
+    if (id != null) json['id'] = id;
     return json;
   }
 
   static List<InlineResponse200> listFromJson(List<dynamic> json) {
-    return json == null ? new List<InlineResponse200>() : json.map((value) => new InlineResponse200.fromJson(value)).toList();
+    return json == null
+        ? new List<InlineResponse200>()
+        : json.map((value) => new InlineResponse200.fromJson(value)).toList();
   }
 
   static Map<String, InlineResponse200> mapFromJson(Map<String, dynamic> json) {
     var map = new Map<String, InlineResponse200>();
     if (json != null && json.isNotEmpty) {
-      json.forEach((String key, dynamic value) => map[key] = new InlineResponse200.fromJson(value));
+      json.forEach((String key, dynamic value) =>
+          map[key] = new InlineResponse200.fromJson(value));
     }
     return map;
   }
 }
-

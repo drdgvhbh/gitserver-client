@@ -1,4 +1,4 @@
-part of gitserver-client.api;
+part of gitserver.api;
 
 class ApiException implements Exception {
   int code = 0;

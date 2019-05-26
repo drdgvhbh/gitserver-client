@@ -1,4 +1,4 @@
-part of gitserver-client.api;
+part of gitserver.api;
 
 class Contributor {
   /* Contributor's email */

@@ -1,8 +1,8 @@
-# gitserver-client.model.InlineResponse200
+# gitserver.model.InlineResponse200
 
 ## Load the model package
 ```dart
-import 'package:gitserver-client/api.dart';
+import 'package:gitserver/api.dart';
 ```
 
 ## Properties

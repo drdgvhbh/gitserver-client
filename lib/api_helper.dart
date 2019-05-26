@@ -1,4 +1,4 @@
-part of gitserver-client.api;
+part of gitserver.api;
 
 const _delimiters = const {'csv': ',', 'ssv': ' ', 'tsv': '\t', 'pipes': '|'};
 
