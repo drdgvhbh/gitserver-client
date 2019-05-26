@@ -67,7 +67,7 @@ All URIs are relative to *http://localhost/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**listCommits**](docs//DefaultApi.md#listcommits) | **GET** /repositories/{directory}/commit | List commits
+*DefaultApi* | [**listCommits**](docs//DefaultApi.md#listcommits) | **GET** /repositories/{directory}/commits | List commits
 
 
 ## Documentation For Models

@@ -9,7 +9,7 @@ All URIs are relative to *http://localhost/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listCommits**](DefaultApi.md#listCommits) | **GET** /repositories/{directory}/commit | List commits
+[**listCommits**](DefaultApi.md#listCommits) | **GET** /repositories/{directory}/commits | List commits
 
 
 # **listCommits**

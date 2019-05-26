@@ -19,7 +19,7 @@ class DefaultApi {
     }
 
     // create path and map variables
-    String path = "/repositories/{directory}/commit".replaceAll("{format}","json").replaceAll("{" + "directory" + "}", directory.toString());
+    String path = "/repositories/{directory}/commits".replaceAll("{format}","json").replaceAll("{" + "directory" + "}", directory.toString());
 
     // query params
     List<QueryParam> queryParams = [];
