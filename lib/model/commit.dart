@@ -1,22 +1,24 @@
 part of gitserver.api;
 
-class LogData {
+class Commit {
   
   Contributor author = null;
   
   Contributor committer = null;
   /* The hash of the commit */
   String hash = null;
+  /* The references pointing to this commit */
+  List<String> references = [];
   /* The summary of the commit */
   String summary = null;
-  LogData();
+  Commit();
 
   @override
   String toString() {
-    return 'LogData[author=$author, committer=$committer, hash=$hash, summary=$summary, ]';
+    return 'Commit[author=$author, committer=$committer, hash=$hash, references=$references, summary=$summary, ]';
   }
 
-  LogData.fromJson(Map<String, dynamic> json) {
+  Commit.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     if (json['author'] == null) {
       author = null;
@@ -33,6 +35,11 @@ class LogData {
     } else {
           hash = json['hash'];
     }
+    if (json['references'] == null) {
+      references = null;
+    } else {
+      references = (json['references'] as List).cast<String>();
+    }
     if (json['summary'] == null) {
       summary = null;
     } else {
@@ -48,19 +55,21 @@ class LogData {
       json['committer'] = committer;
     if (hash != null)
       json['hash'] = hash;
+    if (references != null)
+      json['references'] = references;
     if (summary != null)
       json['summary'] = summary;
     return json;
   }
 
-  static List<LogData> listFromJson(List<dynamic> json) {
-    return json == null ? new List<LogData>() : json.map((value) => new LogData.fromJson(value)).toList();
+  static List<Commit> listFromJson(List<dynamic> json) {
+    return json == null ? new List<Commit>() : json.map((value) => new Commit.fromJson(value)).toList();
   }
 
-  static Map<String, LogData> mapFromJson(Map<String, dynamic> json) {
-    var map = new Map<String, LogData>();
+  static Map<String, Commit> mapFromJson(Map<String, dynamic> json) {
+    var map = new Map<String, Commit>();
     if (json != null && json.isNotEmpty) {
-      json.forEach((String key, dynamic value) => map[key] = new LogData.fromJson(value));
+      json.forEach((String key, dynamic value) => map[key] = new Commit.fromJson(value));
     }
     return map;
   }

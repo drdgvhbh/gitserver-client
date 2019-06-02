@@ -38,12 +38,16 @@ class ApiClient {
           return value is bool ? value : '$value'.toLowerCase() == 'true';
         case 'double':
           return value is double ? value : double.parse('$value');
+        case 'Commit':
+          return Commit.fromJson(value);
         case 'Contributor':
           return Contributor.fromJson(value);
         case 'InlineResponse200':
           return InlineResponse200.fromJson(value);
-        case 'LogData':
-          return LogData.fromJson(value);
+        case 'InlineResponse2001':
+          return InlineResponse2001.fromJson(value);
+        case 'Reference':
+          return Reference.fromJson(value);
         default:
           {
             Match match;

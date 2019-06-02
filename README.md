@@ -68,13 +68,16 @@ All URIs are relative to *http://localhost/v1*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *DefaultApi* | [**listCommits**](docs//DefaultApi.md#listcommits) | **GET** /repositories/{directory}/commits | List commits
+*DefaultApi* | [**listReferences**](docs//DefaultApi.md#listreferences) | **GET** /repositories/{directory}/references | List references
 
 
 ## Documentation For Models
 
+ - [Commit](docs//Commit.md)
  - [Contributor](docs//Contributor.md)
  - [InlineResponse200](docs//InlineResponse200.md)
- - [LogData](docs//LogData.md)
+ - [InlineResponse2001](docs//InlineResponse2001.md)
+ - [Reference](docs//Reference.md)
 
 
 ## Documentation For Authorization

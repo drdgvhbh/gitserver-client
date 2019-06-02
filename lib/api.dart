@@ -14,9 +14,11 @@ part 'auth/http_basic_auth.dart';
 
 part 'api/default_api.dart';
 
+part 'model/commit.dart';
 part 'model/contributor.dart';
 part 'model/inline_response200.dart';
-part 'model/log_data.dart';
+part 'model/inline_response2001.dart';
+part 'model/reference.dart';
 
 
 ApiClient defaultApiClient = ApiClient();
