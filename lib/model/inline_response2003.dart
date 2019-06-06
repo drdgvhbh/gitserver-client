@@ -1,22 +1,22 @@
 part of gitserver.api;
 
-class InlineResponse2001 {
+class InlineResponse2003 {
   /* The API version */
   String apiVersion = null;
   /* The response data */
-  List<Change> data = [];
+  List<Reference> data = [];
   /* The request method */
   String method = null;
   /* The request ID */
   String id = null;
-  InlineResponse2001();
+  InlineResponse2003();
 
   @override
   String toString() {
-    return 'InlineResponse2001[apiVersion=$apiVersion, data=$data, method=$method, id=$id, ]';
+    return 'InlineResponse2003[apiVersion=$apiVersion, data=$data, method=$method, id=$id, ]';
   }
 
-  InlineResponse2001.fromJson(Map<String, dynamic> json) {
+  InlineResponse2003.fromJson(Map<String, dynamic> json) {
     if (json == null) return;
     if (json['apiVersion'] == null) {
       apiVersion = null;
@@ -26,7 +26,7 @@ class InlineResponse2001 {
     if (json['data'] == null) {
       data = null;
     } else {
-      data = Change.listFromJson(json['data']);
+      data = Reference.listFromJson(json['data']);
     }
     if (json['method'] == null) {
       method = null;
@@ -53,14 +53,14 @@ class InlineResponse2001 {
     return json;
   }
 
-  static List<InlineResponse2001> listFromJson(List<dynamic> json) {
-    return json == null ? new List<InlineResponse2001>() : json.map((value) => new InlineResponse2001.fromJson(value)).toList();
+  static List<InlineResponse2003> listFromJson(List<dynamic> json) {
+    return json == null ? new List<InlineResponse2003>() : json.map((value) => new InlineResponse2003.fromJson(value)).toList();
   }
 
-  static Map<String, InlineResponse2001> mapFromJson(Map<String, dynamic> json) {
-    var map = new Map<String, InlineResponse2001>();
+  static Map<String, InlineResponse2003> mapFromJson(Map<String, dynamic> json) {
+    var map = new Map<String, InlineResponse2003>();
     if (json != null && json.isNotEmpty) {
-      json.forEach((String key, dynamic value) => map[key] = new InlineResponse2001.fromJson(value));
+      json.forEach((String key, dynamic value) => map[key] = new InlineResponse2003.fromJson(value));
     }
     return map;
   }

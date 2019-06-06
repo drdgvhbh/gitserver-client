@@ -1,4 +1,4 @@
-# gitserver.model.InlineResponse2001
+# gitserver.model.InlineResponse2002
 
 ## Load the model package
 ```dart
@@ -9,7 +9,7 @@ import 'package:gitserver/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **apiVersion** | **String** | The API version | [default to null]
-**data** | [**List&lt;Change&gt;**](Change.md) | The response data | [default to []]
+**data** | [**List&lt;Commit&gt;**](Commit.md) | The response data | [default to []]
 **method** | **String** | The request method | [default to null]
 **id** | **String** | The request ID | [default to null]
 

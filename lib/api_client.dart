@@ -38,6 +38,8 @@ class ApiClient {
           return value is bool ? value : '$value'.toLowerCase() == 'true';
         case 'double':
           return value is double ? value : double.parse('$value');
+        case 'Change':
+          return Change.fromJson(value);
         case 'Commit':
           return Commit.fromJson(value);
         case 'Contributor':
@@ -46,6 +48,10 @@ class ApiClient {
           return InlineResponse200.fromJson(value);
         case 'InlineResponse2001':
           return InlineResponse2001.fromJson(value);
+        case 'InlineResponse2002':
+          return InlineResponse2002.fromJson(value);
+        case 'InlineResponse2003':
+          return InlineResponse2003.fromJson(value);
         case 'Reference':
           return Reference.fromJson(value);
         default:
