@@ -1,10 +1,11 @@
 part of gitserver.api;
 
 class Change {
-  
+  /* The relative file path in the repository */
   String path = null;
-  
+  /* The type of change */
   String type = null;
+  //enum typeEnum {  MODIFY,  INSERT,  DELETE,  };{
   Change();
 
   @override
