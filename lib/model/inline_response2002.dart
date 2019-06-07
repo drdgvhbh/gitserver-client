@@ -4,7 +4,7 @@ class InlineResponse2002 {
   /* The API version */
   String apiVersion = null;
   /* The response data */
-  List<Commit> data = [];
+  List<Change> data = [];
   /* The request method */
   String method = null;
   /* The request ID */
@@ -26,7 +26,7 @@ class InlineResponse2002 {
     if (json['data'] == null) {
       data = null;
     } else {
-      data = Commit.listFromJson(json['data']);
+      data = Change.listFromJson(json['data']);
     }
     if (json['method'] == null) {
       method = null;

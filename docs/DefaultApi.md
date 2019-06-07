@@ -9,14 +9,14 @@ All URIs are relative to *http://localhost/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getCommit**](DefaultApi.md#getCommit) | **GET** /repositories/{directory}/commit/{hash} | Get commit
-[**getCommitChanges**](DefaultApi.md#getCommitChanges) | **GET** /repositories/{directory}/commit/{hash}/changes | Get commit changes
+[**getCommit**](DefaultApi.md#getCommit) | **GET** /repositories/{directory}/commits/{hash} | Get commit
+[**getCommitChanges**](DefaultApi.md#getCommitChanges) | **GET** /repositories/{directory}/commits/{hash}/changes | Get commit changes
 [**listCommits**](DefaultApi.md#listCommits) | **GET** /repositories/{directory}/commits | List commits
 [**listReferences**](DefaultApi.md#listReferences) | **GET** /repositories/{directory}/references | List references
 
 
 # **getCommit**
-> InlineResponse200 getCommit(directory, hash)
+> InlineResponse2001 getCommit(directory, hash)
 
 Get commit
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getCommitChanges**
-> InlineResponse2001 getCommitChanges(directory, hash)
+> InlineResponse2002 getCommitChanges(directory, hash)
 
 Get commit changes
 
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **listCommits**
-> InlineResponse2002 listCommits(directory)
+> InlineResponse200 listCommits(directory)
 
 List commits
 
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 

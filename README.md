@@ -68,8 +68,8 @@ All URIs are relative to *http://localhost/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**getCommit**](docs//DefaultApi.md#getcommit) | **GET** /repositories/{directory}/commit/{hash} | Get commit
-*DefaultApi* | [**getCommitChanges**](docs//DefaultApi.md#getcommitchanges) | **GET** /repositories/{directory}/commit/{hash}/changes | Get commit changes
+*DefaultApi* | [**getCommit**](docs//DefaultApi.md#getcommit) | **GET** /repositories/{directory}/commits/{hash} | Get commit
+*DefaultApi* | [**getCommitChanges**](docs//DefaultApi.md#getcommitchanges) | **GET** /repositories/{directory}/commits/{hash}/changes | Get commit changes
 *DefaultApi* | [**listCommits**](docs//DefaultApi.md#listcommits) | **GET** /repositories/{directory}/commits | List commits
 *DefaultApi* | [**listReferences**](docs//DefaultApi.md#listreferences) | **GET** /repositories/{directory}/references | List references
 
